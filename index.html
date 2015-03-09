@@ -19,9 +19,7 @@
             <input type="text" class="form-control" ng-model = 'txt'/>
           </form>
           <br/>
-
           <p>已有{{todoList.lenght}}个todoList</p>
-
           <ul class="ul-none">
             <li ng-repeat="todo in todoList track by $index" ng-class = "{ finished: todo.checked }">
               <input type="checkbox" ng-model = 'todo.checked' />
