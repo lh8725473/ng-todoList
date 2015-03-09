@@ -1,0 +1,11 @@
+.ul-none{
+  list-style: outside none none;
+}
+
+.ul-none .finished{
+  text-decoration: line-through;
+}
+
+a{
+  cursor:pointer;
+}

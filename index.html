@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="todoListApp">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>todolist</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5" ng-controller="todoListAppController">
+          <form ng-submit="add()">
+            <label>输入文字翻入todoList中</label>
+            <input type="text" class="form-control" ng-model = 'txt'/>
+          </form>
+          <br/>
+
+          <p>已有{{todoList.lenght}}个todoList</p>
+
+          <ul class="ul-none">
+            <li ng-repeat="todo in todoList track by $index" ng-class = "{ finished: todo.checked }">
+              <input type="checkbox" ng-click="finish(todo)"/>
+              {{todo.txt}}
+              <a ng-click="todoList.splice($index, 1)">X</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="bower_components/angularjs/angular.js"></script>
+    <script type="text/javascript" src="js/todolist.js"></script>
+  </body>
+</html>
