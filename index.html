@@ -24,7 +24,7 @@
 
           <ul class="ul-none">
             <li ng-repeat="todo in todoList track by $index" ng-class = "{ finished: todo.checked }">
-              <input type="checkbox" ng-click="finish(todo)"/>
+              <input type="checkbox" ng-model = 'todo.checked' />
               {{todo.txt}}
               <a ng-click="todoList.splice($index, 1)">X</a>
             </li>
