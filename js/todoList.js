@@ -18,4 +18,4 @@ angular.module('todoListApp').controller('todoListAppController',[
       todo.checked = !todo.checked
     }
   }
-  ])
+])
