@@ -1,0 +1,38 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "ng-todoList",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lh8725473/ng-todoList.git"
+  },
+  "keywords": [
+    "todoList"
+  ],
+  "author": "lh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lh8725473/ng-todoList/issues"
+  },
+  "homepage": "https://github.com/lh8725473/ng-todoList",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-less": "^0.11.3",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-filerev": "^0.2.1",
+    "grunt-inline-angular-templates": "^0.1.5",
+    "grunt-usemin": "^2.3.0",
+    "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.1.5"
+  }
+}
